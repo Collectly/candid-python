@@ -66,7 +66,7 @@ class UniversalEncounterUpdate(UniversalEncounterUpdateBase):
     837i NM1 2500 variant for Loop ID-2310.  Used to indicate the individual whom has secondary responsibility for surgical procedures in institutional claims processing.  Only used when operating_provider is also set.
     """
 
-    type_of_bill: typing.Optional[TypeOfBillCompositeUpdate] = pydantic.Field(default=None)
+    type_of_bill: typing.Optional[TypeOfBillCompositeUpdate] = None
     """
     Four digit code used in institutional forms to indicate the type of bill (e.g., hospital inpatient, hospital outpatient). First digit is a leading 0, followed by the type_of_facility, type_of_care, then frequency_code. Professional forms are not required to submit this attribute. You may send the 4 digit code via raw_code, or each individual digit separately via composite_codes.
     """

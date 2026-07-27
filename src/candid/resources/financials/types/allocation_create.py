@@ -16,7 +16,7 @@ class AllocationCreate(UniversalBaseModel):
 
     amount_cents: int
     target: AllocationTargetCreate
-    earmark: typing.Optional[AllocationEarmarkType] = pydantic.Field(default=None)
+    earmark: typing.Optional[AllocationEarmarkType] = None
     """
     If enabled for your organization, optional earmarking configuration for patient prepayments.
     When provided on unattributed allocations, holds the payment for future auto-allocation to matching encounters.

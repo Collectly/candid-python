@@ -18,12 +18,12 @@ class ContractUpdate(UniversalBaseModel):
     The starting day upon which the contract is effective
     """
 
-    expiration_date: typing.Optional[DateUpdate] = pydantic.Field(default=None)
+    expiration_date: typing.Optional[DateUpdate] = None
     """
     An optional end day upon which the contract expires
     """
 
-    regions: typing.Optional[RegionsUpdate] = pydantic.Field(default=None)
+    regions: typing.Optional[RegionsUpdate] = None
     """
     If present, the contract's rendering providers will be patched to this exact
     value, overriding what was set before.
