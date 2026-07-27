@@ -18,7 +18,7 @@ class ProviderCredentialingSpan(BaseCredentialingSpan):
     The rendering provider covered by the credentialing span.
     """
 
-    regions: Regions = pydantic.Field()
+    regions: Regions
     """
     The states covered by the credentialing span. A span may be national and cover all states.
     """

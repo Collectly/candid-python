@@ -22,7 +22,7 @@ class ContractBase(UniversalBaseModel):
     An optional end day upon which the contract expires
     """
 
-    regions: Regions = pydantic.Field()
+    regions: Regions
     """
     The state(s) to which the contract's coverage extends.
     It may also be set to "national" for the entirety of the US.
