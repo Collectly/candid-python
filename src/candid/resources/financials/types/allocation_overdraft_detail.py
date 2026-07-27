@@ -13,7 +13,7 @@ class AllocationOverdraftDetail(UniversalBaseModel):
     Provides entity-specific details to display in a table format.
     """
 
-    allocation_target: AllocationTarget = pydantic.Field()
+    allocation_target: AllocationTarget
     """
     The allocation target that would be overdrafted (service_line, claim, unattributed, etc.)
     """

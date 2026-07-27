@@ -17,7 +17,7 @@ class BalanceEarmark(UniversalBaseModel):
     """
 
     id: uuid.UUID
-    target: AllocationEarmarkType = pydantic.Field()
+    target: AllocationEarmarkType
     """
     The target for this earmark (date of service or external encounter ID)
     """
