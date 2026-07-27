@@ -30,17 +30,17 @@ class ContractBase(UniversalBaseModel):
 
     contract_status: typing.Optional[ContractStatus] = None
     authorized_signatory: typing.Optional[AuthorizedSignatory] = None
-    commercial_insurance_types: InsuranceTypes = pydantic.Field()
+    commercial_insurance_types: InsuranceTypes
     """
     The commercial plan insurance types this contract applies.
     """
 
-    medicare_insurance_types: InsuranceTypes = pydantic.Field()
+    medicare_insurance_types: InsuranceTypes
     """
     The Medicare plan insurance types this contract applies.
     """
 
-    medicaid_insurance_types: InsuranceTypes = pydantic.Field()
+    medicaid_insurance_types: InsuranceTypes
     """
     The Medicaid plan insurance types this contract applies.
     """
